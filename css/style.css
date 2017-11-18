@@ -1,0 +1,229 @@
+/*copy font @import from googlefonts.com*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+ }
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #f56476;
+    padding: 7.5px 20px;
+    font-size: 18px;
+    align-items: flex-end;
+  }
+
+.brand-link {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    }
+/* do margin left so that not adding space to the right so that creating equal space on both side of the nav*/
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #cec2ff; 
+    text-decoration: none;
+    transition: .30s; /*makes the color transition smoother and not so blunt*/
+    padding: 20px 20px 0px 20px;
+    filter: drop-shadow(16px 16px 20px pink);
+       }
+
+nav a:hover {
+    color:#71b9e2;
+    font-size: 26px;
+        }
+
+.banner {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/homepage%20hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    }
+
+.banner h1 {
+    background:rgba(255,255,255,0.5); /*transparent background*/
+    padding: 20px;
+    color: #f56476;
+    border-radius: 10px;/*rounds out the edges of all the rectangles*/
+    opacity: 0; /*makes the text invisible*/
+    transition: .5s;
+   }
+
+.banner:hover h1 {
+    opacity: 1;/*when hover in h1 inside will change the opacity*/
+}
+
+.intro {
+    text-align: center;
+    font-size: 24px;
+    background: #f56476;
+    color: #cec2ff;
+    padding: 20px 0px 20px 0px;
+}
+.row {
+    display: flex; /*tells parent container to display in a row*/
+    }
+.col {
+    width: 100%;  /*makes 3 column space and try to be as wide as possible*/
+    background: #e5f8f9;
+    padding: 16px;
+    color: deeppink;
+  }
+
+/* figure out to do text align in the paragraph .col h2 {
+    text-align: center
+}
+
+
+.center-text {
+    text-align: center;
+}  */
+
+  .col2 {
+    width: 100%; 
+    background: #e5f8f9;
+    padding: 16px;
+    color: #0549b7;
+  }
+ 
+.footer {
+    background: #f56476;
+    color: #cec2ff;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.fashionbanner {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/fashionhero.jpeg");
+    background-size: cover;
+    background-position: top;
+    }
+.fashionbanner h1 {
+    padding: 20px;
+    color: #f56476;
+    font-size: 36px;
+}
+
+.moviebanner {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/moviebanner.jpeg");
+    background-size: cover;
+    background-position: center;
+    }
+.moviebanner h1 {
+    padding: 20px;
+    color: #f56476;
+    font-size: 36px;
+}
+.about-image {
+    width: 50%;
+    display: block;
+    margin: 16px auto;
+    border-radius: 10px;/*rounds out the edges of all the rectangles*/
+    transition: .3s;
+    
+}
+
+.about-image:hover {
+    filter: grayscale(100%);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.about-p {
+    text-align: justify;
+    margin: 36px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: .2rem;
+    font-size: 1 rem;
+    line-height: 1.5rem;
+   }
+
+
+.select-animal {
+    padding-top: 15px;
+}            
+ 
+.newsletter {
+    padding-top: 10px;
+}
+
+.gallery-banner {
+    height: 300px; /*makes banner 300 px tall*/
+    position: relative;
+    background: purple;
+}
+
+.gallery-banner h1 {
+    position: absolute; /*position elements to parent container set to something other than static. This example has position relative*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*translate your position*/
+    animation: jump 7s infinite;
+ }
+
+@keyframes jump {
+    0% /*tells nothing at start or different points at the animation*/ {
+        top: 50%;
+        opacity:1;
+        /*tells want to start at same starting point*/ 
+        }
+    50% {
+        top: 40%;
+        opacity: 0;
+    }
+    100%{
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+.contact-header {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+}
+
+.form-center {
+    display: block;
+    text-align: center;
+  }
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
