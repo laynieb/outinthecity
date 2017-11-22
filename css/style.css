@@ -51,7 +51,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../images/homepage%20hero.jpeg");
+    background: url("../images/mainbanner.jpeg");
     background-size: cover;
     background-position: center;
     }
@@ -86,21 +86,6 @@ nav a:hover {
     color: deeppink;
   }
 
-/* figure out to do text align in the paragraph .col h2 {
-    text-align: center
-}
-
-
-.center-text {
-    text-align: center;
-}  */
-
-  .col2 {
-    width: 100%; 
-    background: #e5f8f9;
-    padding: 16px;
-    color: #0549b7;
-  }
  
 .footer {
     background: #f56476;
@@ -138,6 +123,21 @@ nav a:hover {
     color: #f56476;
     font-size: 36px;
 }
+
+.eatbanner {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/pexels-photo-262918.jpeg");
+    background-size: cover;
+    background-position: center;
+    }
+.eatbanner h1 {
+    padding: 20px;
+    color: #f56476;
+    font-size: 36px;
+}
 .about-image {
     width: 50%;
     display: block;
@@ -147,9 +147,6 @@ nav a:hover {
     
 }
 
-.about-image:hover {
-    filter: grayscale(100%);
-}
 
 .center-text {
     text-align: center;
@@ -160,64 +157,7 @@ nav a:hover {
     margin: 36px;
 }
 
-textarea {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    padding: .2rem;
-    font-size: 1 rem;
-    line-height: 1.5rem;
-   }
 
-
-.select-animal {
-    padding-top: 15px;
-}            
- 
-.newsletter {
-    padding-top: 10px;
-}
-
-.gallery-banner {
-    height: 300px; /*makes banner 300 px tall*/
-    position: relative;
-    background: purple;
-}
-
-.gallery-banner h1 {
-    position: absolute; /*position elements to parent container set to something other than static. This example has position relative*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);/*translate your position*/
-    animation: jump 7s infinite;
- }
-
-@keyframes jump {
-    0% /*tells nothing at start or different points at the animation*/ {
-        top: 50%;
-        opacity:1;
-        /*tells want to start at same starting point*/ 
-        }
-    50% {
-        top: 40%;
-        opacity: 0;
-    }
-    100%{
-        top: 50%;
-        opacity: 1;
-    }
-}
-
-.contact-header {
-    display: block;
-    text-align: center;
-    font-size: 26px;
-}
-
-.form-center {
-    display: block;
-    text-align: center;
-  }
 
 form
 {
